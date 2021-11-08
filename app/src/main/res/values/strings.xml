@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Movies list</string>
+    <string name="hola">Hello World!</string>
 </resources>
