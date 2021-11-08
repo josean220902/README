@@ -10,4 +10,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d("joseluis", "onCreate")
     }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("joseluis", "onResume")
+    }
 }
