@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Movies list</string>
     <string name="hola">Hello World!</string>
+    <string name="content_description_add_playlist">Add to watchlist</string>
+    <string name="content_description_poster">Movie Poster Image</string>
+    <string name="rent">Rent from R29.99</string>
+    <string name="buy">Buy from R129.99</string>
 </resources>

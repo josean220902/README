@@ -43,6 +43,21 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/xml/activity_main_scene.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/GitHub/constraint-workshop/app/src/main/java/com/bestsecret/constraintlayout/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/GitHub/constraint-workshop/app/src/main/res/layout/main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>

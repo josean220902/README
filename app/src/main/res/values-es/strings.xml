@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>  <string name="app_name">Lista de peliculas</string>
     <string name="hola">Hola Mundo!</string>
+
+    <string name="content_description_add_playlist">Añadir a lista de seguimiento</string>
+    <string name="content_description_poster">Imagen de póster de película</string>
+    <string name="rent">Alquilar desde $ 29.99</string>
+    <string name="buy">Comprar desde $ 129.99</string>
 </resources>
