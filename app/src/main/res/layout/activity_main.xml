@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/jsjsjsjs"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layoutDescription="@xml/activity_main_scene"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene">
 
 
     <TextView
@@ -15,8 +13,8 @@
         android:layout_height="wrap_content"
         android:text="@string/hola"
         android:textColor="@color/primary"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="434dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -28,7 +26,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cartulera" />
+        app:srcCompat="@drawable/cartulera"
+        android:contentDescription="@string/imagen1" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -37,28 +36,27 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        app:srcCompat="@drawable/segundacartulera" />
+        app:srcCompat="@drawable/segundacartulera"
+        android:contentDescription="@string/imagen2" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="94dp"
-        android:layout_height="67dp"
-        android:contentDescription="@string/content_description_poster"
+        android:layout_width="108dp"
+        android:layout_height="74dp"
+        android:text="@string/nombrepelicula"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toStartOf="@+id/button_add_to_playlist"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        tools:text="Fast and Furious 7" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <TextView
         android:id="@+id/textview_movie_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-
+        android:text="@string/fechalanzamiento"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:text="Abril 2015 PG 2h 20m" />
+         />
 
     <ImageButton
         android:id="@+id/button_add_to_playlist"
@@ -66,7 +64,7 @@
         android:layout_height="48dp"
         android:layout_marginEnd="4dp"
         android:background="@null"
-        android:contentDescription="@string/content_description_add_playlist"
+        android:contentDescription="@string/imagenbotonañadir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:srcCompat="@drawable/ic_bookmark" />
@@ -76,100 +74,70 @@
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:text="@string/rent"
-
+        android:text="@string/alquiler_desde_30"
         app:layout_constraintEnd_toStartOf="@+id/button_buy"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="358dp"
-        tools:text="ALQUILER DESDE R29,99" />
+        app:layout_constraintTop_toBottomOf="@+id/llala" />
 
     <Button
         android:id="@+id/button_buy"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/buy"
-
+        android:text="@string/comprar_desde_60"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/button_rent"
-        app:layout_constraintTop_toTopOf="@+id/button_rent"
-        tools:text="COMPRAR DESDE R127,99" />
+        app:layout_constraintTop_toTopOf="@+id/button_rent" />
 
-    <Button
-        android:id="@+id/fab_type_movie"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:clickable="true"
-        android:focusable="true"
-
-        app:rating="4.5"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="547dp" />
-
-    <Button
-        android:id="@+id/fab_type"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="44dp"
-        android:clickable="true"
-
-        android:focusable="true"
-        app:layout_constraintStart_toEndOf="@+id/fab_type_movie"
-        app:layout_constraintTop_toTopOf="@+id/fab_type_movie" />
-
-    <Button
-        android:id="@+id/fab_similar"
-        android:layout_width="56dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="40dp"
-        android:clickable="true"
-
-        android:focusable="true"
-        app:layout_constraintStart_toEndOf="@+id/fab_type"
-        app:layout_constraintTop_toTopOf="@+id/fab_type"
-        app:srcCompat="@drawable/ic_similar"></Button>
-
-<Button
-    android:id="@+id/fab_rotten_tomato"
-    android:layout_width="56dp"
-    android:layout_height="56dp"
-    android:clickable="true"
-    android:focusable="true"
-    app:backgroundTint="#FFF9C4"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintStart_toEndOf="@+id/fab_similar"
-    app:layout_constraintTop_toTopOf="@+id/fab_similar"
-    app:srcCompat="@drawable/tomato" />
-
-    <TextView
+    <RatingBar
         android:id="@+id/textview_rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="172dp"
-
+        android:rating="4.8"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/fab_similar"
-        app:layout_constraintTop_toBottomOf="@+id/fab_type_movie"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_rent" />
+
 
     <TextView
-
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:text="@string/descripcion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fab_type_movie"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="Desde el brutal asesinato de Han (Sung Kang) en Tokio y el asesinato fallido de Hobbs (Dwayne Johnson) en Los Ángeles, Deckard Shaw (Jason Statham) persigue implacablemente a los que mataron a Owen (Luke Evans), su hermano pequeño, durante la última misión del equipo." />
+        app:layout_constraintTop_toBottomOf="@+id/textview_rating"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/director"
+        app:layout_constraintStart_toStartOf="@+id/textview_movie_details"
+        app:layout_constraintTop_toBottomOf="@+id/textview_movie_details" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_sica_brian_tyler"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valoraci_n_de_la_auciencia"
+        app:layout_constraintEnd_toEndOf="@+id/textview_rating"
+        app:layout_constraintStart_toStartOf="@+id/textview_rating"
+        app:layout_constraintTop_toBottomOf="@+id/textview_rating" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

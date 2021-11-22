@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>  <string name="app_name">Lista de peliculas</string>
     <string name="hola">Hola Mundo!</string>
-
-    <string name="content_description_add_playlist">Añadir a lista de seguimiento</string>
-    <string name="content_description_poster">Imagen de póster de película</string>
-    <string name="rent">Alquilar desde $ 29.99</string>
-    <string name="buy">Comprar desde $ 129.99</string>
+    <string name="director">Director: James Wan</string>
+    <string name="nombrepelicula">Fast and Furious 7</string>
+    <string name="fechalanzamiento">Abril 2015 PG 2h 20m</string>
+    <string name="alquiler_desde_30">ALQUILER DESDE 30€</string>
+    <string name="comprar_desde_60">COMPRAR DESDE 60€</string>
+    <string name="descripcion">Desde el brutal asesinato de Han (Sung Kang) en Tokio y el asesinato fallido de Hobbs (Dwayne Johnson) en Los Ángeles, Deckard Shaw (Jason Statham) persigue implacablemente a los que mataron a Owen (Luke Evans), su hermano pequeño, durante la última misión del equipo.</string>
+    <string name="m_sica_brian_tyler">Música: Brian Tyler</string>
+    <string name="valoraci_n_de_la_auciencia">Valoración de la audiencia</string>
+    <string name="imagen1">Primera imagen</string>
+    <string name="imagen2">Segunda imagen</string>
+    <string name="imagenbotonañadir">Boton añadir</string>
 </resources>
