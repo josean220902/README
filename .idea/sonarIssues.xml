@@ -78,6 +78,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Documents/GitHub/constraint-workshop/app/src/main/java/com/bestsecret/constraintlayout/MainActivity.kt">
           <value>
             <set />
