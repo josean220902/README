@@ -9,6 +9,6 @@ class CasoDeUso @Inject constructor(
 ){
   fun execute() = repositorioPelicula.getPelicula()
 
-    }
+}
 
 
