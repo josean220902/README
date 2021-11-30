@@ -6,7 +6,6 @@ import javax.inject.Inject
 
 class RepositorioPeliculaImpl @Inject constructor() : RepositorioPelicula {
     override fun getPelicula(): Pelicula  {
-        return Pelicula(titulo = "Fast to Furious 7", url = "", rating = 1.0,director = "")
-
+        return Pelicula(tittle = "Fast to Furious 7", url = "", rating = 1.0,director = "")
     }
 }
