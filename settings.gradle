@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Lista de peliculas"
 include ':app'
+include ':domain'
+include ':data'
