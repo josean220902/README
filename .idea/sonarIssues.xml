@@ -88,12 +88,22 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/HardcodedDataSource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/RepositorioPeliculaImpl.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/domain/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/CasoDeUsoListaPeliculas/CasoDeUsoListaPeliculas.kt">
           <value>
             <set />
           </value>

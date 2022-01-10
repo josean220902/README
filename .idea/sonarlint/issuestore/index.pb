@@ -30,10 +30,6 @@ P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 g
 7app/src/main/java/com/example/listadepeliculas/MyLog.kt,3\e\3e41bd0daf5c8bf66f1642d9a97b50bc0da5e8e6
-Œ
-\.idea/shelf/Uncommitted_changes_before_Checkout_at_22_11_2021_19_01__Default_Changelist_.xml,7\1\7113aab2238604297393739163b6a2bb7ddabce8
-n
->app/src/main/java/com/example/listadepeliculas/MainActivity.kt,e\a\eab693ad3aa9ed4c70b1e17a2700f3d1ef70e078
 ?
 data/.gitignore,d\1\d1977b1bb1b3e249de790289a11d8f31156df269
 Q
@@ -50,3 +46,7 @@ G
 data/proguard-rules.pro,0\f\0fbb6d729d2f1271751b1eee2d01927256945f01
 u
 Edata/src/androidTest/java/com/example/data/ExampleInstrumentedTest.kt,1\c\1cbc835f0a19c2dc1946c18ca3d386d24fcd4942
+<
+build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
