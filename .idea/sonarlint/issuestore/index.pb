@@ -48,5 +48,3 @@ u
 Edata/src/androidTest/java/com/example/data/ExampleInstrumentedTest.kt,1\c\1cbc835f0a19c2dc1946c18ca3d386d24fcd4942
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
