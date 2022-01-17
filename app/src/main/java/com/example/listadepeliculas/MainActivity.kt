@@ -20,11 +20,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        viewModel.loadFilm()
+        viewModel.pelicula.observe(this){
+            binding.textView.text = it.title
+        }
         log.log("joseluis la actividad se ha creado")
         val film = usecase.execute()
         log.log("El titulo es: ${film.tittle} " )
 
     }
+    private val viewModel: MainViewModel by viewModels()
+
     override fun onStart() {
         super.onStart()
         log.log("joseluis Pasa a estado visible")
@@ -35,7 +41,8 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        log.log("joseluis Empieza el estado foreground")
+        binding.textView.text="joseluis Empieza el estado foreground"
+        binding.imageView.setImageResource(R.drawable.ic_bookmark)
     }
 
     override fun onStop() {
