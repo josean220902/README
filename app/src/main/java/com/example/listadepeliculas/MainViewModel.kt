@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModel
 import com.example.domain.Pelicula
 import dagger.hilt.android.lifecycle.HiltViewModel
 import java.io.FileDescriptor
+import java.util.*
 import javax.inject.Inject
 
 @HiltViewModel
@@ -20,8 +21,8 @@ private val useCase: CasoDeUso
     val pelicula: LiveData<FilmDataView> =filmLiveData
 
     fun loadFilm(){
-        val loadedFilm = useCase.execute()
-        filmLiveData.value = FilmDataView(loadedFilm.tittle)
+        val loadedFilm = Locale.getDefault().language
+
     }
 
 

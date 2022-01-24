@@ -138,6 +138,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/domain/src/main/java/CasoDeUsoListaPeliculas/GetFilmsUseCase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/domain/src/main/java/CasoDeUsos/CasoDeUso.kt">
           <value>
             <set />
