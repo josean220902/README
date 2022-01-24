@@ -24,8 +24,6 @@ X
 (gradle/wrapper/gradle-wrapper.properties,f\b\fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 ?
 data/.gitignore,d\1\d1977b1bb1b3e249de790289a11d8f31156df269
 f
@@ -42,3 +40,9 @@ u
 Edata/src/androidTest/java/com/example/data/ExampleInstrumentedTest.kt,1\c\1cbc835f0a19c2dc1946c18ca3d386d24fcd4942
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+j
+:data/src/main/java/com/example/data/HardcodedDataSource.kt,4\4\442a13735ef2d6cf395b2ef885b2aa755dc27fa9
+g
+7app/src/main/java/com/example/listadepeliculas/MyLog.kt,3\e\3e41bd0daf5c8bf66f1642d9a97b50bc0da5e8e6
+g
+7app/src/main/java/com/example/listadepeliculas/MyApp.kt,d\e\de0c8ba1c6b066346d392b6d824887c27ea8fb74

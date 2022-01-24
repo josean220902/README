@@ -3,6 +3,7 @@ package com.example.listadepeliculas
 import CasoDeUsos.CasoDeUso
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bumptech.glide.Glide
 import com.example.listadepeliculas.databinding.ActivityMainBinding
 
 import dagger.hilt.android.AndroidEntryPoint
@@ -22,7 +23,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         viewModel.loadFilm()
         viewModel.pelicula.observe(this){
-            binding.textView.text = it.title
+
+            binding.rating.rating = it.rating.toFloat()
+            binding.title.text = it.text
+            binding.description.text= it.text
+            binding.director.text= it.text
+            Glide.with(this).load(it.imageUrl).into(binding.imageView10)
+
         }
         log.log("joseluis la actividad se ha creado")
         val film = usecase.execute()
@@ -41,7 +48,7 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        binding.textView.text="joseluis Empieza el estado foreground"
+        binding.title.text="joseluis Empieza el estado foreground"
         binding.imageView.setImageResource(R.drawable.ic_bookmark)
     }
 
