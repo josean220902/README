@@ -3,5 +3,5 @@ package repositorio
 import com.example.domain.Pelicula
 
 interface RepositorioPelicula {
-    fun getPelicula(): Pelicula
+    suspend fun getPelicula(id: Int, language: String): Pelicula?
 }

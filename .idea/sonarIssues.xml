@@ -103,12 +103,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/FilmApi.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/FilmDto.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/HardcodedDataSource.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/RepositorioPeliculaImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/ServerDataSource.kt">
           <value>
             <set />
           </value>

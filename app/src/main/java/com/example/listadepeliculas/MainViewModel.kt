@@ -9,10 +9,10 @@ import androidx.lifecycle.ViewModel
 
 import com.example.domain.Pelicula
 import dagger.hilt.android.lifecycle.HiltViewModel
+import java.io.FileDescriptor
 import javax.inject.Inject
 
 @HiltViewModel
-data class  FilmDataView(val title: String)
 class MainViewModel @Inject constructor(
 private val useCase: CasoDeUso
 ): ViewModel(), LifecycleObserver{
@@ -26,3 +26,4 @@ private val useCase: CasoDeUso
 
 
 }
+data class  FilmDataView(val title: String, val description: String,val rating: String,val director: String, val text: String, val imageUrl: String)
