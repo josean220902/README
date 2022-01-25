@@ -9,6 +9,8 @@ import androidx.lifecycle.ViewModel
 
 import com.example.domain.Pelicula
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import java.io.FileDescriptor
 import java.util.*
 import javax.inject.Inject
@@ -22,7 +24,18 @@ private val useCase: CasoDeUso
 
     fun loadFilm(){
         val loadedFilm = Locale.getDefault().language
+        withContext(Dispatchers.Main){
+            loadedFilm?.let {
+                filmLiveData.value = FilmDataView(
+                    it.title,
+                    it.imageUrl,
+                    it.director,
+                    it.description,
+                    it.rating
 
+                )
+            }
+        }
     }
 
 

@@ -3,6 +3,7 @@ package com.example.listadepeliculas
 import CasoDeUsos.CasoDeUso
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import com.bumptech.glide.Glide
 import com.example.listadepeliculas.databinding.ActivityMainBinding
 
