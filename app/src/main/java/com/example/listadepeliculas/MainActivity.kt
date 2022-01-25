@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.bumptech.glide.Glide
+import com.example.domain.Pelicula
 import com.example.listadepeliculas.databinding.ActivityMainBinding
 
 import dagger.hilt.android.AndroidEntryPoint
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
    @Inject
    lateinit var usecase: CasoDeUso
    private lateinit var binding: ActivityMainBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override suspend fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -26,15 +27,15 @@ class MainActivity : AppCompatActivity() {
         viewModel.pelicula.observe(this){
 
             binding.rating.rating = it.rating.toFloat()
-            binding.title.text = it.text
-            binding.description.text= it.text
-            binding.director.text= it.text
+            binding.title.text = it.title
+            binding.description.text= it.title
+            binding.director.text= it.title
             Glide.with(this).load(it.imageUrl).into(binding.imageView10)
 
         }
         log.log("joseluis la actividad se ha creado")
         val film = usecase.execute()
-        log.log("El titulo es: ${film.tittle} " )
+        log.log("El titulo es: ${Pelicula.tittle} " )
 
     }
     private val viewModel: MainViewModel by viewModels()
