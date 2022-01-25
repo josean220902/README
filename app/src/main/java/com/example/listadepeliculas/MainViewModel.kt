@@ -9,8 +9,7 @@ import androidx.lifecycle.ViewModel
 
 import com.example.domain.Pelicula
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
 import java.io.FileDescriptor
 import java.util.*
 import javax.inject.Inject
@@ -22,22 +21,34 @@ private val useCase: CasoDeUso
     private val filmLiveData = MutableLiveData<FilmDataView>()
     val pelicula: LiveData<FilmDataView> =filmLiveData
 
-    fun loadFilm(){
-        val loadedFilm = Locale.getDefault().language
-        withContext(Dispatchers.Main){
-            loadedFilm?.let {
-                filmLiveData.value = FilmDataView(
-                    it.title,
-                    it.imageUrl,
-                    it.director,
-                    it.description,
-                    it.rating
 
-                )
+    var job: Job? = null
+
+    fun loadFilm(){
+        job = CoroutineScope(Dispatchers.IO).launch{
+            val language = Locale.getDefault().language
+            val loadedFilm=useCase.execute(600,language)
+
+            withContext(Dispatchers.Main){
+                loadedFilm?.let {
+
+                    filmLiveData.value = FilmDataView(
+                        it.tittle,
+                        it.description,
+                        it.rating,
+                        it.director ?: "",
+                        it.url
+                    )
+                }
             }
         }
+
+    }
+    override fun onCleared(){
+        super.onCleared()
+        job?.cancel()
     }
 
-
 }
-data class  FilmDataView(val title: String, val description: String,val rating: String,val director: String, val text: String, val imageUrl: String)
+
+data class  FilmDataView(val title: String, val description: String,val rating: Double,val director: String, val imageUrl: String)

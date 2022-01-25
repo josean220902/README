@@ -7,7 +7,7 @@ import javax.inject.Inject
 class CasoDeUso @Inject constructor(
     private val repositorioPelicula:RepositorioPelicula
 ){
-suspend fun execute(id: Int, language:String)= RepositorioPelicula.getPelicula(id,language)
+suspend fun execute(id: Int, language:String)= repositorioPelicula.getPelicula(id,language)
 
 
 }
