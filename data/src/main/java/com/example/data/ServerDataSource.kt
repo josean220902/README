@@ -23,14 +23,14 @@ class ServerDataSource @Inject constructor() {
         val popularDto = api.getPopular(language)
         val director = creditsDto.cast.firstOrNull { it.role == "Directing" }?.name ?: ""
         val image = "https://image.tmdb.org/t/p/w500${filmDto.imageUrl}"
-        return Pelicula(filmDto.title, image, filmDto.rating, director, filmDto.description)
+        return Pelicula(filmDto.title,id, image, filmDto.rating, director, filmDto.description)
 
     }
 
     suspend fun getFilms(language: String): List<Pelicula> {
         return api.getPopular(language).films.map {
             val image = "https://image.tmdb.org/t/p/w500${it.imageUrl}"
-            Pelicula(it.title, image, it.rating, null, it.description)
+            Pelicula(it.title,it.id, image, it.rating, null, it.description)
         }
     }
 

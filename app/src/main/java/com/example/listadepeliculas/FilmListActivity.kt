@@ -22,6 +22,10 @@ class FilmListActivity : AppCompatActivity() {
         binding = FilmListBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.root.adapter= adapter
+        viewModel.loadFilms()
+        viewModel.films.observe(this){
+            adapter.submitList(it)
+        }
     }
 
 }

@@ -50,5 +50,3 @@ private val useCase: CasoDeUso
     }
 
 }
-
-data class  FilmDataView(val title: String, val description: String,val rating: Double,val director: String, val imageUrl: String)
