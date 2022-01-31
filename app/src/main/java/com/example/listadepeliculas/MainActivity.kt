@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         log.log("joseluis la actividad se ha creado")
-        
+
 
     }
 
