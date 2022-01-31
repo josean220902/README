@@ -1,16 +1,12 @@
 
 >
 app/.gitignore,5\1\51e1c5d383dfaa35e0e7e5873a0a99355a86880f
-€
-Papp/src/androidTest/java/com/example/listadepeliculas/ExampleInstrumentedTest.kt,7\1\716a1e328f39e44431d34149faec55eaac6bbc68
 L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
 T
 $.idea/codeStyles/codeStyleConfig.xml,d\d\dd7b3350c29c49497756c7f32c69a3bed18b1cba
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
-q
-Aapp/src/test/java/com/example/listadepeliculas/ExampleUnitTest.kt,3\7\3738a7b3e6beef4e719716c751610ebe8bea0a5f
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -40,21 +36,11 @@ u
 Edata/src/androidTest/java/com/example/data/ExampleInstrumentedTest.kt,1\c\1cbc835f0a19c2dc1946c18ca3d386d24fcd4942
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-g
-7app/src/main/java/com/example/listadepeliculas/MyLog.kt,3\e\3e41bd0daf5c8bf66f1642d9a97b50bc0da5e8e6
-g
-7app/src/main/java/com/example/listadepeliculas/MyApp.kt,d\e\de0c8ba1c6b066346d392b6d824887c27ea8fb74
-`
-0data/src/main/java/com/example/data/AppModule.kt,0\1\019b4db6c17a6de51912fb8ec2c08a4d94ed0151
 Q
 !data/src/main/AndroidManifest.xml,f\a\fa20ad08e770fe0392ec3df5be8c6bde6c35d607
 A
 data/build.gradle,7\2\72c2781d3d9ac8b82a3543f0fba5c796b2975232
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 o
 ?domain/src/main/java/CasoDeUsoListaPeliculas/GetFilmsUseCase.kt,7\2\724078e74ce6af964a96ebfe4794bda6b437215b
-\
-,domain/src/main/java/CasoDeUsos/CasoDeUso.kt,a\3\a3fb6e2b9c1bc19a62dec46f46e8e4240ab400ad

@@ -26,7 +26,8 @@ class ServerDataSource @Inject constructor() {
         return Pelicula(filmDto.title, image, filmDto.rating, director, filmDto.description)
 
     }
-    suspend fun getFilms(language: String): List<Pelicula>{
+
+    suspend fun getFilms(language: String): List<Pelicula> {
         return api.getPopular(language).films.map {
             val image = "https://image.tmdb.org/t/p/w500${it.imageUrl}"
             Pelicula(it.title, image, it.rating, null, it.description)

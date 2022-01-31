@@ -6,7 +6,7 @@ import javax.inject.Inject
 class HardcodedDataSource @Inject constructor(
     private val dataSource: HardcodedDataSource
 ) {
-     fun getPelicula(): Pelicula {
+    fun getPelicula(): Pelicula {
         return dataSource.getPelicula()
     }
 }

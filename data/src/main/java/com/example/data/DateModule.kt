@@ -9,7 +9,7 @@ import repositorio.RepositorioPelicula
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract class DateModule{
+abstract class DateModule {
     @Binds
     abstract fun bindFilmRepository(impl: RepositorioPeliculaImpl): RepositorioPelicula
 }

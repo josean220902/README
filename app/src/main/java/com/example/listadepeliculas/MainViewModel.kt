@@ -17,7 +17,7 @@ import javax.inject.Inject
 @HiltViewModel
 class MainViewModel @Inject constructor(
 private val useCase: CasoDeUso
-): ViewModel(), LifecycleObserver{
+) : ViewModel(), LifecycleObserver{
     private val filmLiveData = MutableLiveData<FilmDataView>()
     val pelicula: LiveData<FilmDataView> =filmLiveData
 

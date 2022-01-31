@@ -13,14 +13,14 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class FilmListActivity : AppCompatActivity() {
-   private lateinit var binding: FilmListBinding
-   private val viewModel: FilmListViewModel by viewModels()
+    private lateinit var binding: FilmListBinding
+    private val viewModel: FilmListViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-            binding = FilmListBinding.inflate(layoutInflater)
-            setContentView(binding.root)
-        }
-
+        binding = FilmListBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
+
+}
 
 
