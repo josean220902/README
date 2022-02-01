@@ -22,7 +22,7 @@ class FilmListViewModel @Inject constructor(
             val loadedFilms= useCase.execute(language)
             withContext(Dispatchers.Main){
                 loadedFilms?.let{
-                    filmsLiveData.value = it.map { film -> FilmOverviewDataView(film.id, film.url) }
+                    filmsLiveData.value = it.map { film -> FilmOverviewDataView(film.id, film.tittle, film.url) }
                 }
             }
         }

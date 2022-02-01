@@ -11,7 +11,7 @@
         android:name=".MyApp"
         android:theme="@style/Theme.ListaDePeliculas">
         <activity
-            android:name=".MainActivity"
+            android:name=".FilmActivity"
             android:exported="true">
 
         </activity>

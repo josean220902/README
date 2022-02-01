@@ -1,6 +1,7 @@
 package com.example.listadepeliculas
 
 import CasoDeUsos.CasoDeUso
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -29,6 +30,7 @@ class FilmListActivity : AppCompatActivity() {
         }
         adapter.callback={
             Log.i("Tag","Este es el mensaje")
+            val intent = Intent(this,FilmActivity::class.java)
         }
     }
 

@@ -12,7 +12,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class FilmActivity : AppCompatActivity() {
     @Inject
     lateinit var log: MyLog
 
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private val viewModel: MainViewModel by viewModels()
+    private val viewModel:FilmViewModel by viewModels()
 
     override fun onStart() {
         super.onStart()
