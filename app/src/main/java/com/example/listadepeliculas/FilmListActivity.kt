@@ -3,6 +3,7 @@ package com.example.listadepeliculas
 import CasoDeUsos.CasoDeUso
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.viewModels
 import com.bumptech.glide.Glide
 import com.example.listadepeliculas.databinding.ActivityMainBinding
@@ -25,6 +26,9 @@ class FilmListActivity : AppCompatActivity() {
         viewModel.loadFilms()
         viewModel.films.observe(this){
             adapter.submitList(it)
+        }
+        adapter.callback={
+            Log.i("Tag","Este es el mensaje")
         }
     }
 

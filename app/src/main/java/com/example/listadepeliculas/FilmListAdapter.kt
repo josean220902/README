@@ -10,8 +10,10 @@ import com.example.listadepeliculas.databinding.FilmOverviewBinding
 import javax.inject.Inject
 
 open class FilmViewHolder(val binding: FilmOverviewBinding) : RecyclerView.ViewHolder(binding.root)
+typealias OnMessageClick= (FilmOverviewDataView)->Unit
 class FilmListAdapter @Inject constructor() :
     ListAdapter<FilmOverviewDataView, FilmViewHolder>(diffUtil) {
+    var callback: OnMessageClick?=null
     companion object {
         private val diffUtil = object : DiffUtil.ItemCallback<FilmOverviewDataView>() {
             override fun areItemsTheSame(
@@ -31,6 +33,7 @@ class FilmListAdapter @Inject constructor() :
         }
     }
 
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FilmViewHolder {
         return object : FilmViewHolder(
             FilmOverviewBinding.inflate(
@@ -47,5 +50,8 @@ class FilmListAdapter @Inject constructor() :
         val film = getItem(position)
         holder.binding.title.text = film.title
         Glide.with(holder.binding.poster).load(film.imageUrl).into(holder.binding.poster)
+        holder.binding.root.setOnClickListener {
+            callback?.invoke(film)
+        }
     }
 }
