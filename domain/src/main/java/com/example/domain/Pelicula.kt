@@ -6,5 +6,6 @@ data class Pelicula(
     val url: String,
     val rating: Double,
     val director: String?,
-    val description: String
+    val description: String,
+    val videoId: String?
 )

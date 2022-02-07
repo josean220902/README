@@ -17,6 +17,8 @@ class RepositorioPeliculaImpl @Inject constructor(
     override suspend fun getFilms(language: String): List<Pelicula>? {
         return runCatching {
             serverDataSource.getFilms(language)
+        }.onFailure {
+            it
         }.getOrNull()
     }
 

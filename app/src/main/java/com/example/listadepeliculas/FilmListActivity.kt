@@ -31,6 +31,10 @@ class FilmListActivity : AppCompatActivity() {
         adapter.callback={
             Log.i("Tag","Este es el mensaje")
             val intent = Intent(this,FilmActivity::class.java)
+            intent.putExtra(FilmActivity.FILM_ID, it.id)
+            startActivity(intent)
+
+
         }
     }
 

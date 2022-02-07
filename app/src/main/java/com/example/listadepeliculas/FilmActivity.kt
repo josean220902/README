@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.bumptech.glide.Glide
-import com.example.domain.Pelicula
+
 import com.example.listadepeliculas.databinding.ActivityMainBinding
 
 import dagger.hilt.android.AndroidEntryPoint
@@ -13,6 +13,10 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class FilmActivity : AppCompatActivity() {
+    companion object{
+        const val FILM_ID="ID"
+    }
+
     @Inject
     lateinit var log: MyLog
 
@@ -24,14 +28,18 @@ class FilmActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        viewModel.loadFilm()
+
+       val id= intent?.extras?.getInt(FILM_ID) ?:512195
+        viewModel.loadFilm(id)
+
+
         viewModel.pelicula.observe(this) {
 
             binding.rating.rating = it.rating.toFloat()
             binding.title.text = it.title
             binding.description.text = it.title
             binding.director.text = it.title
-            Glide.with(this).load(it.imageUrl).into(binding.imageView10)
+            Glide.with(this).load(it.imageUrl).into(binding.imageView)
 
         }
         log.log("joseluis la actividad se ha creado")
@@ -53,8 +61,6 @@ class FilmActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        binding.title.text = "joseluis Empieza el estado foreground"
-        binding.imageView.setImageResource(R.drawable.ic_bookmark)
     }
 
     override fun onStop() {
