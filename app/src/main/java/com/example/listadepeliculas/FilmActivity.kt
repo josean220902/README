@@ -1,8 +1,11 @@
 package com.example.listadepeliculas
 
 import CasoDeUsos.CasoDeUso
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.activity.viewModels
 import com.bumptech.glide.Glide
 
@@ -13,8 +16,8 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class FilmActivity : AppCompatActivity() {
-    companion object{
-        const val FILM_ID="ID"
+    companion object {
+        const val FILM_ID = "ID"
     }
 
     @Inject
@@ -29,7 +32,7 @@ class FilmActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       val id= intent?.extras?.getInt(FILM_ID) ?:512195
+        val id = intent?.extras?.getInt(FILM_ID) ?: 512195
         viewModel.loadFilm(id)
 
 
@@ -40,6 +43,16 @@ class FilmActivity : AppCompatActivity() {
             binding.description.text = it.title
             binding.director.text = it.title
             Glide.with(this).load(it.imageUrl).into(binding.imageView)
+            if (it.videoId == null) {
+                binding.buttonRent.visibility = View.GONE
+
+
+            } else {
+                binding.buttonRent.visibility = View.VISIBLE
+                binding.buttonRent.setOnClickListener { _ ->
+                    launchYoutube(it.videoId)
+                }
+            }
 
         }
         log.log("joseluis la actividad se ha creado")
@@ -47,7 +60,12 @@ class FilmActivity : AppCompatActivity() {
 
     }
 
-    private val viewModel:FilmViewModel by viewModels()
+    private fun launchYoutube(id: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.youtube.com/watch?=$id"))
+        startActivity(intent)
+    }
+
+    private val viewModel: FilmViewModel by viewModels()
 
     override fun onStart() {
         super.onStart()

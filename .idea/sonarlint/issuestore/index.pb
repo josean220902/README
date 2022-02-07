@@ -50,13 +50,7 @@ o
 Papp/src/androidTest/java/com/example/listadepeliculas/ExampleInstrumentedTest.kt,7\1\716a1e328f39e44431d34149faec55eaac6bbc68
 q
 Aapp/src/test/java/com/example/listadepeliculas/ExampleUnitTest.kt,3\7\3738a7b3e6beef4e719716c751610ebe8bea0a5f
-`
-0data/src/main/java/com/example/data/AppModule.kt,0\1\019b4db6c17a6de51912fb8ec2c08a4d94ed0151
 g
 7app/src/main/java/com/example/listadepeliculas/MyApp.kt,d\e\de0c8ba1c6b066346d392b6d824887c27ea8fb74
 g
 7app/src/main/java/com/example/listadepeliculas/MyLog.kt,3\e\3e41bd0daf5c8bf66f1642d9a97b50bc0da5e8e6
-j
-:data/src/main/java/com/example/data/HardcodedDataSource.kt,4\4\442a13735ef2d6cf395b2ef885b2aa755dc27fa9
-a
-1data/src/main/java/com/example/data/DateModule.kt,c\6\c66141aa3a6441f690604657cde484b14bdc9b10
