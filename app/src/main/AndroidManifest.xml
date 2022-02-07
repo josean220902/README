@@ -13,12 +13,16 @@
         <activity
             android:name=".FilmActivity"
             android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FilmListActivity"/>
 
         </activity>
-
+<
         <activity
             android:name=".FilmListActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

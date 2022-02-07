@@ -56,7 +56,7 @@ class FilmActivity : AppCompatActivity() {
 
         }
         log.log("joseluis la actividad se ha creado")
-
+        actionBar?.setDisplayHomeAsUpEnabled(true)
 
     }
 
