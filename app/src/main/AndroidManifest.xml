@@ -18,7 +18,7 @@
                 android:value=".FilmListActivity"/>
 
         </activity>
-<
+
         <activity
             android:name=".FilmListActivity"
             android:exported="true">
