@@ -1,8 +1,10 @@
-import android.icu.text.CaseMap
+package com.example.data
+
+
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import org.junit.runner.Description
+
 
 @Entity
 

@@ -138,6 +138,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/AppDatebase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/AppModule.kt">
           <value>
             <set />
@@ -153,7 +158,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/FilmDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/FilmDto.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/data/src/main/java/com/example/data/FilmEntity.kt">
           <value>
             <set />
           </value>

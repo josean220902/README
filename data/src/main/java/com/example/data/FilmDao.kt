@@ -1,4 +1,7 @@
+package com.example.data
+
 import androidx.room.*
+import com.example.data.FilmEntity
 
 
 @Dao
