@@ -36,8 +36,6 @@ u
 Edata/src/androidTest/java/com/example/data/ExampleInstrumentedTest.kt,1\c\1cbc835f0a19c2dc1946c18ca3d386d24fcd4942
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-@
-app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 o
 ?domain/src/main/java/CasoDeUsoListaPeliculas/GetFilmsUseCase.kt,7\2\724078e74ce6af964a96ebfe4794bda6b437215b
 \
@@ -56,8 +54,6 @@ v
 Fapp/src/main/java/com/example/listadepeliculas/FilmOverviewDataView.kt,b\c\bc6fdd810261ef12226ec2d84be87dcf4bb0d783
 h
 8data/src/main/java/com/example/data/FilmListResultDto.kt,6\6\66b395687aa7f36a6f68e2c285b0b45dee660d2d
-c
-3domain/src/main/java/com/example/domain/Pelicula.kt,7\4\74b35db7c017262b7d1eb54c348f005c803c4cff
 g
 7data/src/main/java/com/example/data/ServerDataSource.kt,4\d\4d2008aa4a52e96974adb59b9f08510c4998e43d
 e
@@ -74,3 +70,19 @@ w
 Gdomain/src/main/java/CasoDeUsoListaPeliculas/CasoDeUsoListaPeliculas.kt,4\8\48d3e0b430a89472848f7366a7dc7f0531406635
 g
 7domain/src/main/java/repositorio/RepositorioPelicula.kt,f\e\fe477900f850cb83ffa701b649abade2b1a11e61
+n
+>app/src/main/java/com/example/listadepeliculas/FilmActivity.kt,9\b\9b25507e74a9740bc767a003227881f77f10fa3d
+^
+.data/src/main/java/com/example/data/FilmDto.kt,0\e\0eb5b62d2900844ed7189824a76af639fe6abe35
+j
+:data/src/main/java/com/example/data/HardcodedDataSource.kt,4\4\442a13735ef2d6cf395b2ef885b2aa755dc27fa9
+`
+0data/src/main/java/com/example/data/AppModule.kt,0\1\019b4db6c17a6de51912fb8ec2c08a4d94ed0151
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+Q
+!data/src/main/AndroidManifest.xml,f\a\fa20ad08e770fe0392ec3df5be8c6bde6c35d607
+^
+.data/src/main/java/com/example/data/FilmApi.kt,2\3\23212e0d30875a222b17f0bcb142c179135b7181
+a
+1data/src/main/java/com/example/data/DateModule.kt,c\6\c66141aa3a6441f690604657cde484b14bdc9b10
