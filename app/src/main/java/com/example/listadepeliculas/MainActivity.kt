@@ -1,9 +1,9 @@
 package com.example.listadepeliculas
 
 import android.os.Bundle
-import android.os.PersistableBundle
-import androidx.fragment.app.Fragment
+
 import androidx.fragment.app.FragmentActivity
+import com.example.listadepeliculas.databinding.MainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

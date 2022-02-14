@@ -60,8 +60,6 @@ e
 5data/src/main/java/com/example/data/VideoResultDto.kt,f\7\f7fc668c122ef9f9625293f588ade21d00200f63
 _
 /data/src/main/java/com/example/data/VideoDto.kt,5\e\5edd3e893b5eed0c92faae22b35ca482eceacc9f
-r
-Bapp/src/main/java/com/example/listadepeliculas/FilmListActivity.kt,d\e\dea626f4dcedf03042c2e535371ff30d1e79a42f
 s
 Capp/src/main/java/com/example/listadepeliculas/FilmListViewModel.kt,c\6\c6c4d1137dfa4db100c38cb98a02c49129833dbb
 o
@@ -70,8 +68,6 @@ w
 Gdomain/src/main/java/CasoDeUsoListaPeliculas/CasoDeUsoListaPeliculas.kt,4\8\48d3e0b430a89472848f7366a7dc7f0531406635
 g
 7domain/src/main/java/repositorio/RepositorioPelicula.kt,f\e\fe477900f850cb83ffa701b649abade2b1a11e61
-n
->app/src/main/java/com/example/listadepeliculas/FilmActivity.kt,9\b\9b25507e74a9740bc767a003227881f77f10fa3d
 ^
 .data/src/main/java/com/example/data/FilmDto.kt,0\e\0eb5b62d2900844ed7189824a76af639fe6abe35
 j
