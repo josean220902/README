@@ -1,6 +1,7 @@
 package com.example.listadepeliculas
 
 import CasoDeUsos.CasoDeUso
+import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.DrawableContainer
 import androidx.appcompat.app.AppCompatActivity
@@ -26,31 +27,37 @@ class FilmListFragment : Fragment() {
     lateinit var adapter: FilmListAdapter
     private lateinit var binding: FilmListBinding
     private val viewModel: FilmListViewModel by viewModels()
+    private val filmLauncher: FilmLauncher? = null
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        filmLauncher=context as? FilmLauncher
+    }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
 
-    ): View{
+    ): View {
         binding = FilmListBinding.inflate(layoutInflater)
 
         binding.root.adapter = adapter
         viewModel.loadFilms()
         viewModel.films.observe(this) {
             adapter.submitList(it)
-    }
+        }
         adapter.callback = {
             Log.i("Tag", "Este es el mensaje")
+            filmLauncher?.openDetails(it.id)
             //TODO
 
 
-        }             
+        }
 
         return binding.root
 
-        }
-
     }
+
+}
 
 
 
