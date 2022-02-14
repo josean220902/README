@@ -78,10 +78,6 @@ j
 :data/src/main/java/com/example/data/HardcodedDataSource.kt,4\4\442a13735ef2d6cf395b2ef885b2aa755dc27fa9
 `
 0data/src/main/java/com/example/data/AppModule.kt,0\1\019b4db6c17a6de51912fb8ec2c08a4d94ed0151
-P
- app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
-Q
-!data/src/main/AndroidManifest.xml,f\a\fa20ad08e770fe0392ec3df5be8c6bde6c35d607
 ^
 .data/src/main/java/com/example/data/FilmApi.kt,2\3\23212e0d30875a222b17f0bcb142c179135b7181
 a
