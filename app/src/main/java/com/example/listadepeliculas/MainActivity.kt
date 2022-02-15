@@ -7,7 +7,7 @@ import com.example.listadepeliculas.databinding.MainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : FragmentActivity() {
+class MainActivity : FragmentActivity(), FilmLauncher {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = MainBinding.inflate(layoutInflater)
@@ -23,9 +23,18 @@ class MainActivity : FragmentActivity() {
         fragment.arguments = Bundle().apply {
             putInt(FilmFragment.FILM_ID, id)
         }
-        supportFragmentManager.beginTransaction()
-            .add(R.id.list, fragment)
-            .addToBackStack("BACKSTACK")
-            .commit()
+        val isTablet = resources.getBoolean(R.bool.isTablet)
+        if (isTablet){
+            supportFragmentManager.beginTransaction()
+                .add(R.id.detail, fragment)
+                .commit()
+        }else{
+            supportFragmentManager.beginTransaction()
+
+                .add(R.id.list, fragment)
+                .addToBackStack("BACKSTACK")
+                .commit()
+        }
+
     }
 }

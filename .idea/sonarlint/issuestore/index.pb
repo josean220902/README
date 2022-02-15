@@ -78,3 +78,17 @@ j
 .data/src/main/java/com/example/data/FilmApi.kt,2\3\23212e0d30875a222b17f0bcb142c179135b7181
 a
 1data/src/main/java/com/example/data/DateModule.kt,c\6\c66141aa3a6441f690604657cde484b14bdc9b10
+c
+3domain/src/main/java/com/example/domain/Pelicula.kt,7\4\74b35db7c017262b7d1eb54c348f005c803c4cff
+A
+data/build.gradle,7\2\72c2781d3d9ac8b82a3543f0fba5c796b2975232
+a
+1data/src/main/java/com/example/data/FilmEntity.kt,0\3\03967c31167a8218ff11c77b80425426d98392e9
+b
+2data/src/main/java/com/example/data/AppDatebase.kt,f\f\ff5c9412cc9981d5eedf0040866de8cf04de46bc
+i
+9data/src/main/java/com/example/data/DatabaseDatasource.kt,e\9\e93696480d02183a6010abaa566b01095cadbff6
+a
+1data/src/main/java/com/example/data/RoomModule.kt,2\5\2514d9cd1f2d9aa6d254f8303198f7b40976c1c8
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164

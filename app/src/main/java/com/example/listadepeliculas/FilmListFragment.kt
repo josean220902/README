@@ -14,6 +14,9 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatViewInflater
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.listadepeliculas.databinding.ActivityMainBinding
 import com.example.listadepeliculas.databinding.FilmListBinding
@@ -27,7 +30,7 @@ class FilmListFragment : Fragment() {
     lateinit var adapter: FilmListAdapter
     private lateinit var binding: FilmListBinding
     private val viewModel: FilmListViewModel by viewModels()
-    private val filmLauncher: FilmLauncher? = null
+    private var filmLauncher: FilmLauncher? = null
     override fun onAttach(context: Context) {
         super.onAttach(context)
         filmLauncher=context as? FilmLauncher
@@ -41,6 +44,18 @@ class FilmListFragment : Fragment() {
         binding = FilmListBinding.inflate(layoutInflater)
 
         binding.root.adapter = adapter
+        val fragment = FilmFragment()
+        fragment.arguments = Bundle().apply {
+            putInt(FilmFragment.FILM_ID, id)
+        }
+        val isTablet = resources.getBoolean(R.bool.isTablet)
+        if (isTablet){
+            binding.root.layoutManager=LinearLayoutManager(context,RecyclerView.VERTICAL,false)
+
+        }else{
+            binding.root.layoutManager=GridLayoutManager(context, 2)
+
+        }
         viewModel.loadFilms()
         viewModel.films.observe(this) {
             adapter.submitList(it)
